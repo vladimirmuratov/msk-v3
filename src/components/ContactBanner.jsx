@@ -1,5 +1,6 @@
 import {Box, Typography} from '@mui/material'
 import {address, phoneNumber} from '@/config'
+import Link from 'next/link';
 
 export const ContactBanner = () => {
     return (
@@ -14,7 +15,9 @@ export const ContactBanner = () => {
             paddingY: '12px'
         }}>
             <Typography sx={{fontSize: '12px'}}>{address}</Typography>
-            <Typography sx={{fontSize: '12px'}}>{phoneNumber}</Typography>
+            <Typography sx={{fontSize: '12px'}}>
+                <Link href='tel:84997198100'>{phoneNumber}</Link>
+            </Typography>
         </Box>
     )
 }

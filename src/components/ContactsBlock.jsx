@@ -10,7 +10,9 @@ export const ContactsBlock = () => {
             component="section"
             sx={{
                 scrollMarginTop: {xs: '120px', sm: '50px'},
-                paddingX: '32px',
+                // paddingX: '32px',
+                // paddingY: {xs: '25px', sm: '50px'},
+                paddingX: {xs: '12px', sm: '18px', md: '22px'},
                 paddingY: {xs: '25px', sm: '50px'},
                 color: 'var(--black)'
             }}
