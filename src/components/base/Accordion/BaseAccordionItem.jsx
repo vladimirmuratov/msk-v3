@@ -11,7 +11,7 @@ export const BaseAccordionItem = ({id, question, answer}) => {
                 aria-controls={`panel${id}-content`}
                 id={`panel${id}-header`}
             >
-                <Typography sx={{fontSize: {sm: '18px', md: '20px'}, ':hover': {color: 'var(--blue)'}, transition: 'all 0.3s'}}>{question}</Typography>
+                <Typography variant='h3' sx={{fontSize: {sm: '18px', md: '20px'}, ':hover': {color: 'var(--blue)'}, transition: 'all 0.3s'}}>{question}</Typography>
             </AccordionSummary>
             <AccordionDetails sx={{backgroundColor: 'var(--blue)', color: 'var(--white)', whiteSpace: 'pre-wrap'}}>
                 <Typography sx={{fontSize: {sm: '18px', md: '20px'}, lineHeight: 1.5}}>{answer}</Typography>
