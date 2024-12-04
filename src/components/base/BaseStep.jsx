@@ -22,7 +22,7 @@ export const BaseStep = ({id = '', number, label}) => {
                 }}
             />
             <Typography sx={{color: 'var(--blue)', fontSize: '24px'}}>{number}</Typography>
-            <Typography variant='h2' sx={{textTransform: 'uppercase', fontSize: '40px', fontWeight: 400, color: 'var(--black)'}}>{label}</Typography>
+            <Typography variant='h2' sx={{textTransform: 'uppercase', fontSize: {xs: '36px', md: '40px'}, fontWeight: 400, color: 'var(--black)'}}>{label}</Typography>
         </Box>
     )
 }

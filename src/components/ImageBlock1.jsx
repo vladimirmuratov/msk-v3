@@ -24,7 +24,7 @@ export const ImageBlock1 = ({img, text}) => {
                     sx={{
                         color: 'var(--white)',
                         whiteSpace: 'pre-wrap',
-                        fontSize: {sm: '18px', md: '20px'},
+                        fontSize: {xs: '18px', md: '20px'},
                         // lineHeight: 1.3
                     }}>{text}</Typography>
             </Box>
