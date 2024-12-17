@@ -18,7 +18,7 @@ export const Banner = () => {
 
     return (
         <Box sx={{ position: 'relative' }}>
-            <img className="banner" src="/images/banner.jpg" alt="banner" style={{ filter: 'brightness(85%)' }} />
+            <img className="banner" src="/images/banner.jpg" alt="banner" style={{ filter: 'brightness(65%)' }} />
             <Box sx={{
                 position: 'absolute',
                 top: '20%',
@@ -34,17 +34,19 @@ export const Banner = () => {
                         fontWeight: 500,
                         lineHeight: 1,
                         color: 'var(--white)',
-                        textShadow: '0 2px var(--black)'
-                    }}>Долголетие с удовольствием</Typography>
+                        textShadow: '0 2px var(--black)',
+                        textTransform: 'uppercase',
+                        textAlign: 'center'
+                    }}>Лечение в лучших клиниках москвы</Typography>
                 <Typography
                     variant="h2"
                     sx={{
                         fontSize: { xs: '18px', sm: '28px', md: '32px' },
                         lineHeight: 1,
                         color: 'var(--white)',
-                        textShadow: '0 2px var(--black)'
-                    }}>лечение, помогающее
-                    пожилым людям жить полноценной жизнью</Typography>
+                        textShadow: '0 2px var(--black)',
+                        textAlign: 'center'
+                    }}>Доверьте свое здоровье профессионалам!</Typography>
 
                 <Button
                     onClick={() => router.push(`tel:${phoneNumber}`)}
@@ -52,8 +54,8 @@ export const Banner = () => {
                     color="error"
                     size="large"
                     sx={{
-                        alignSelf: 'flex-start',
-                        display: isMobile ? 'block' : 'none'
+                        alignSelf: 'center',
+                        // display: isMobile ? 'block' : 'none'
                     }}
                 >
                     Позвонить
