@@ -1,34 +1,37 @@
-import {Box, IconButton, Link} from '@mui/material'
-import {ContactBanner} from '@/components/ContactBanner'
-import {links} from '@/config'
-import {BaseLink} from '@/components/base/BaseLink'
-import MenuTwoToneIcon from '@mui/icons-material/MenuTwoTone'
-import {useCallback, useEffect, useRef, useState} from 'react'
+import { Box, IconButton, Link } from '@mui/material';
+import { ContactBanner } from '@/components/ContactBanner';
+import { links } from '@/config';
+import { BaseLink } from '@/components/base/BaseLink';
+import MenuTwoToneIcon from '@mui/icons-material/MenuTwoTone';
+import { useCallback, useEffect, useRef, useState } from 'react';
+import SocialBlock from '@/components/SocialBlock';
 
-export const Header = ({toggleDrawer}) => {
-    const scrollContainer = useRef()
-    const [position, setPosition] = useState('relative')
+export const Header = ({ toggleDrawer }) => {
+    const scrollContainer = useRef();
+    const [position, setPosition] = useState('relative');
 
     const onScroll = useCallback(() => {
-        const {top, bottom} = scrollContainer.current.getBoundingClientRect()
+        const { top, bottom } = scrollContainer.current.getBoundingClientRect();
         if (bottom <= 0) {
-            setPosition('fixed')
+            setPosition('fixed');
         } else {
-            setPosition('relative')
+            setPosition('relative');
         }
-    }, [])
+    }, []);
 
     useEffect(() => {
-        window.addEventListener('scroll', onScroll, {passive: true})
+        window.addEventListener('scroll', onScroll, { passive: true });
 
         return () => {
-            window.removeEventListener('scroll', onScroll)
-        }
-    }, [])
+            window.removeEventListener('scroll', onScroll);
+        };
+    }, []);
 
     return (
         <Box ref={scrollContainer}>
-            <ContactBanner/>
+
+            <ContactBanner />
+
             <Box
                 component="header"
                 sx={{
@@ -40,25 +43,36 @@ export const Header = ({toggleDrawer}) => {
                     right: 0,
                     zIndex: 1,
                     backgroundColor: 'var(--white)',
-                    padding: {xs: '12px', sm: '18px', md: '22px'},
+                    padding: { xs: '12px', sm: '18px', md: '22px' },
                     display: 'flex',
                     justifyContent: 'space-between',
                     alignItems: 'center',
                     boxShadow: '0 2px 10px rgb(0 0 0 / 20%)'
                 }}>
-                <Link href='/'>
-                    <img className="logo" src="/images/logo.png" alt="logo"/>
+                <Link href="/">
+                    <img className="logo" src="/images/logo.png" alt="logo" />
                 </Link>
-                <Box component="nav" sx={{display: {xs: 'none', md: 'flex'}, gap: '20px'}}>
-                    {links.map((link) => <BaseLink key={link.id} {...link}/>)}
+                <Box component="nav" sx={{ display: { xs: 'none', md: 'flex' }, gap: '20px', margin: '0 auto' }}>
+                    {links.map((link) => <BaseLink key={link.id} {...link} />)}
                 </Box>
+
                 <IconButton
                     onClick={toggleDrawer(true)}
-                    sx={{visibility: {xs: 'visible', md: 'hidden'}}}
+                    sx={{
+                        // visibility: {xs: 'visible', md: 'hidden'},
+                        display: { xs: 'block', md: 'none' }
+                    }}
                 >
-                    <MenuTwoToneIcon sx={{color: 'var(--blue)'}}/>
+                    <MenuTwoToneIcon sx={{ color: 'var(--blue)' }} />
                 </IconButton>
+
+                {position === 'fixed' && (
+                    <Box sx={{display: { xs: 'none', md: 'block' }}}>
+                        <SocialBlock />
+                    </Box>
+                )}
+
             </Box>
         </Box>
-    )
-}
+    );
+};

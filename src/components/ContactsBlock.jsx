@@ -1,47 +1,51 @@
-import {Box, Link, Typography} from '@mui/material'
-import {address, email, phoneNumber} from '@/config'
-import MapOutlinedIcon from '@mui/icons-material/MapOutlined'
-import LocalPhoneOutlinedIcon from '@mui/icons-material/LocalPhoneOutlined'
-import AlternateEmailIcon from '@mui/icons-material/AlternateEmail'
+import { Box, Link, Typography } from '@mui/material';
+import { address, email, phoneNumber } from '@/config';
+import MapOutlinedIcon from '@mui/icons-material/MapOutlined';
+import LocalPhoneOutlinedIcon from '@mui/icons-material/LocalPhoneOutlined';
+import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
+import SocialBlock from '@/components/SocialBlock';
 
 export const ContactsBlock = () => {
     return (
         <Box
             component="section"
             sx={{
-                scrollMarginTop: {xs: '120px', sm: '50px'},
+                scrollMarginTop: { xs: '120px', sm: '50px' },
                 // paddingX: '32px',
                 // paddingY: {xs: '25px', sm: '50px'},
-                paddingX: {xs: '12px', sm: '18px', md: '22px'},
-                paddingY: {xs: '25px', sm: '50px'},
+                paddingX: { xs: '12px', sm: '18px', md: '22px' },
+                paddingY: { xs: '25px', sm: '50px' },
                 color: 'var(--black)'
             }}
         >
 
-            <Box sx={{display: 'flex', flexDirection: 'column', gap: '10px'}}>
-                <Box sx={{display: 'flex', flexDirection: 'column', gap: '10px'}}>
-                    <Box sx={{display: 'flex', gap: '10px'}}>
-                        <MapOutlinedIcon sx={{color: 'var(--blue)'}}/>
-                        <Typography sx={{fontSize: {xs: '14px', sm: '16px'}}}>{address}</Typography>
+            <Box sx={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+                <Box sx={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+                    <Box sx={{ display: 'flex', gap: '10px' }}>
+                        <MapOutlinedIcon sx={{ color: 'var(--blue)' }} />
+                        <Typography sx={{ fontSize: { xs: '14px', sm: '16px' } }}>{address}</Typography>
                     </Box>
-                    <Box sx={{display: 'flex', gap: '10px'}}>
-                        <LocalPhoneOutlinedIcon sx={{color: 'var(--blue)'}}/>
-                        <Link href={`tel:${phoneNumber}`} sx={{fontSize: {xs: '14px', sm: '16px'}}}>
+                    <Box sx={{ display: 'flex', gap: '10px' }}>
+                        <LocalPhoneOutlinedIcon sx={{ color: 'var(--blue)' }} />
+                        <Link href={`tel:${phoneNumber}`} sx={{ fontSize: { xs: '14px', sm: '16px' } }}>
                             <Typography>{phoneNumber}</Typography>
                         </Link>
                     </Box>
-                    <Box sx={{display: 'flex', gap: '10px'}}>
-                        <AlternateEmailIcon sx={{color: 'var(--blue)'}}/>
-                        <Link href={`mailto:${email}`} sx={{fontSize: {xs: '14px', sm: '16px'}}}>
+                    <Box sx={{ display: 'flex', gap: '10px' }}>
+                        <AlternateEmailIcon sx={{ color: 'var(--blue)' }} />
+                        <Link href={`mailto:${email}`} sx={{ fontSize: { xs: '14px', sm: '16px' } }}>
                             <Typography>{email}</Typography>
                         </Link>
                     </Box>
-                    <Box sx={{paddingLeft: '34px'}}>
-                        <Typography sx={{fontSize: {xs: '14px', sm: '16px'}}}>ООО "МСК"</Typography>
-                        <Typography sx={{fontSize: {xs: '14px', sm: '16px'}}}>ИНН: 9725116009</Typography>
-                        <Typography sx={{fontSize: {xs: '14px', sm: '16px'}}}>КПП: 772501001</Typography>
-                        <Typography sx={{fontSize: {xs: '14px', sm: '16px'}}}>ОГРН: 1237700147343</Typography>
+                    <Box sx={{ paddingLeft: '34px' }}>
+                        <Typography sx={{ fontSize: { xs: '14px', sm: '16px' } }}>ООО "МСК"</Typography>
+                        <Typography sx={{ fontSize: { xs: '14px', sm: '16px' } }}>ИНН: 9725116009</Typography>
+                        <Typography sx={{ fontSize: { xs: '14px', sm: '16px' } }}>КПП: 772501001</Typography>
+                        <Typography sx={{ fontSize: { xs: '14px', sm: '16px' } }}>ОГРН: 1237700147343</Typography>
                     </Box>
+
+                    <SocialBlock className="banner-social-mobile" />
+
                 </Box>
                 <Box>
                     <iframe
@@ -51,5 +55,5 @@ export const ContactsBlock = () => {
                 </Box>
             </Box>
         </Box>
-    )
-}
+    );
+};
