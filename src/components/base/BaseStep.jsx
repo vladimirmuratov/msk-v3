@@ -1,8 +1,9 @@
 import {Box, Divider, Typography} from '@mui/material'
 
-export const BaseStep = ({id = '', number, label}) => {
+export const BaseStep = ({id = '', number, label, className = ''}) => {
     return (
         <Box
+            className={className}
             id={id}
             sx={{
                 display: 'flex',

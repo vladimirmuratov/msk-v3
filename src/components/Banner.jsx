@@ -44,7 +44,8 @@ export const Banner = () => {
                         textShadow: '0 2px 2px var(--black)',
                         textTransform: 'uppercase',
                         textAlign: 'center',
-                    }}>Лечение в лучших клиниках москвы</Typography>
+                        textWrap: 'balance'
+                    }}>Платная госпитализация в москве</Typography>
                 <Typography
                     variant="h2"
                     sx={{
