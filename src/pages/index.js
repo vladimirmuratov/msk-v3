@@ -22,7 +22,6 @@ export default function Home() {
                       content="платные больницы гинекологии, платная госпитализация в москве хирургия, платная травматология москва, платная госпитализация урология, платная госпитализация в москве кардиология, платная госпитализация неврология, платная гастроэнтерология в москве, платный стационар терапия, сомнолог москва лечение храпа" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <meta name="yandex-verification" content="4ef3edf0705d5245" />
-                <link rel="canonical" href="https://www.msk-emergency.ru/" />
                 <link rel="icon" href="/favicon.png" />
             </Head>
             <Box component="main">
