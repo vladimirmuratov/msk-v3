@@ -3,6 +3,9 @@ import {Box, Divider, Typography} from '@mui/material'
 export const BaseStep = ({id = '', number, label, className = ''}) => {
     return (
         <Box
+            data-aos="zoom-out"
+            data-aos-duration="800"
+            data-aos-anchor-placement="center-bottom"
             className={className}
             id={id}
             sx={{

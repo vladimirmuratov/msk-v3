@@ -8,16 +8,25 @@ import { ImageBlock1 } from '@/components/ImageBlock1';
 import { BaseAccordion } from '@/components/base/Accordion/BaseAccordion';
 import { ImageBlock2 } from '@/components/ImageBlock2';
 import { ContactsBlock } from '@/components/ContactsBlock';
-import { Suspense } from 'react';
+import { Suspense, useEffect } from 'react';
 import { Metrika } from '@/Metrika';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function Home() {
+
+    useEffect(() => {
+        AOS.init({
+            disable: 'mobile'
+        });
+    }, [])
+
     return (
         <>
             <Head>
-                <title>Платная госпитализация в Москве +7 (499) 719 81 00, 24/7</title>
+                <title>Платная госпитализация. +7 (499) 719 81 00, 24/7</title>
                 <meta name="description"
-                      content="Ищете платную госпитализацию в Москве? Мы предлагаем круглосуточные услуги. Звоните +7 499 719 81 00 для получения консультации и записи" />
+                      content="Официальный координатор по госпитализации. 10 лет опыта. 20 клиник-партнеров. Минимум документов. Финансовая прозрачность. +7 (499) 719 81 00" />
                 <meta name="keywords"
                       content="платные больницы гинекологии, платная госпитализация в москве хирургия, платная травматология москва, платная госпитализация урология, платная госпитализация в москве кардиология, платная госпитализация неврология, платная гастроэнтерология в москве, платный стационар терапия, сомнолог москва лечение храпа" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
