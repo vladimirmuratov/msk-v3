@@ -30,7 +30,7 @@ export default function Home() {
                 <meta name="keywords"
                       content="платные больницы гинекологии, платная госпитализация в москве хирургия, платная травматология москва, платная госпитализация урология, платная госпитализация в москве кардиология, платная госпитализация неврология, платная гастроэнтерология в москве, платный стационар терапия, сомнолог москва лечение храпа" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <meta name="yandex-verification" content="4ef3edf0705d5245" />
+                <meta name="yandex-verification" content="478e8b2a8af6979b" />
                 <meta name="robots" content="index, follow"/>
                 <link rel="icon" href="/favicon.png" />
             </Head>
