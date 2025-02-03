@@ -1,35 +1,23 @@
 import { Box, Button, Typography } from '@mui/material';
 import { phoneNumber } from '@/config';
 import { useRouter } from 'next/navigation';
-// import { useEffect, useState } from 'react';
 
 export const Banner = () => {
     const router = useRouter();
-    /*const [isMobile, setMobile] = useState(false);
-
-    useEffect(() => {
-        const os = navigator.userAgentData.platform;
-
-        if (os === 'Android' || os === 'iOS') {
-            setMobile(true);
-        }
-
-    }, []);*/
 
     return (
         <Box sx={{
+            display: 'grid',
+            placeItems: 'center',
             position: 'relative',
             backgroundImage: 'url(/images/banner.jpg)',
             height: '80vh',
             backgroundPosition: 'center',
             backgroundSize: 'cover',
-            // filter: 'brightness(65%)'
+            filter: 'brightness(90%)'
         }}>
             {/*<img className="banner" src="/images/banner.jpg" alt="banner" style={{ filter: 'brightness(65%)' }} />*/}
             <Box sx={{
-                position: 'absolute',
-                top: '20%',
-                left: '5%',
                 display: 'flex',
                 flexDirection: 'column',
                 gap: { xs: '10px', sm: '15px' },
@@ -45,14 +33,13 @@ export const Banner = () => {
                         textTransform: 'uppercase',
                         textAlign: 'center',
                         textWrap: 'balance'
-                    }}>Платная госпитализация в москве</Typography>
+                    }}>Платная госпитализация в ведущие больницы Москвы</Typography>
                 <Typography
                     variant="h2"
                     sx={{
                         fontSize: { xs: '18px', sm: '28px', md: '32px' },
-                        // lineHeight: 1,
-                        color: 'var(--white)',
-                        textShadow: '0 2px var(--black)',
+                        color: 'var(--blue)',
+                        textShadow: '2px 2px 1px var(--white)',
                         textAlign: 'center'
                     }}>Доверьте свое здоровье профессионалам!</Typography>
 
@@ -63,7 +50,6 @@ export const Banner = () => {
                     size="large"
                     sx={{
                         alignSelf: 'center',
-                        // display: isMobile ? 'block' : 'none'
                     }}
                 >
                     Позвонить
