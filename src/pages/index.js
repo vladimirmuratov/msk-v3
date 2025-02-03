@@ -32,6 +32,7 @@ export default function Home() {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <meta name="yandex-verification" content="478e8b2a8af6979b" />
                 <meta name="robots" content="index, follow"/>
+                <link rel="canonical" href="https://msk-group-hospital.online/"/>
                 <link rel="icon" href="/favicon.png" />
             </Head>
             <Box component="main">
