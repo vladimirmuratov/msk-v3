@@ -67,3 +67,17 @@ a {
     gap: 30px;
     /*margin-top: 10px;*/
 }
+
+/*----------------ANIMATION BTN-------------------*/
+
+@keyframes color {
+    0%   { background: #be2a2a; }
+    25%  { background: #c43f3f; }
+    50%  { background: #be2a2a; }
+    75%  { background: #c43f3f; }
+    100% { background: #be2a2a; }
+}
+
+.animation-btn{
+    animation: color 2s infinite linear;
+}

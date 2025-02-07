@@ -44,6 +44,7 @@ export const Banner = () => {
                     }}>Доверьте свое здоровье профессионалам!</Typography>
 
                 <Button
+                    className='animation-btn'
                     onClick={() => router.push(`tel:${phoneNumber}`)}
                     variant="contained"
                     color="error"
