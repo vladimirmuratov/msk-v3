@@ -10,7 +10,7 @@ export const Banner = () => {
             display: 'grid',
             placeItems: 'center',
             position: 'relative',
-            backgroundImage: 'url(/images/banner.jpg)',
+            backgroundImage: 'url(/images/banner.webp)',
             height: '80vh',
             backgroundPosition: 'center',
             backgroundSize: 'cover',
