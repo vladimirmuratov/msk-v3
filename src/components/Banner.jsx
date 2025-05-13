@@ -33,7 +33,7 @@ export const Banner = () => {
                         textTransform: 'uppercase',
                         textAlign: 'center',
                         textWrap: 'balance'
-                    }}>Платная госпитализация в ведущие больницы Москвы</Typography>
+                    }}>Платная госпитализация в Москве</Typography>
                 <Typography
                     variant="h2"
                     sx={{

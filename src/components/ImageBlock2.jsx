@@ -17,7 +17,7 @@ export const ImageBlock2 = ({img, text}) => {
                     display: 'flex',
                     justifyContent: 'center',
                     alignItems: 'center',
-                    paddingX: '12px'
+                    padding: '12px'
                 }}>
                 <Typography
                     sx={{

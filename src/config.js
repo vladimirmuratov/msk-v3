@@ -1,35 +1,39 @@
-import InfoTwoToneIcon from '@mui/icons-material/InfoTwoTone'
-import HealthAndSafetyTwoToneIcon from '@mui/icons-material/HealthAndSafetyTwoTone'
-import HelpTwoToneIcon from '@mui/icons-material/HelpTwoTone'
-import Diversity1TwoToneIcon from '@mui/icons-material/Diversity1TwoTone'
-import ContactPhoneTwoToneIcon from '@mui/icons-material/ContactPhoneTwoTone'
+import InfoTwoToneIcon from '@mui/icons-material/InfoTwoTone';
+import HealthAndSafetyTwoToneIcon from '@mui/icons-material/HealthAndSafetyTwoTone';
+import HelpTwoToneIcon from '@mui/icons-material/HelpTwoTone';
+import Diversity1TwoToneIcon from '@mui/icons-material/Diversity1TwoTone';
+import ContactPhoneTwoToneIcon from '@mui/icons-material/ContactPhoneTwoTone';
 
-export const phoneNumber = '+7 499 719 81 00'
-export const address = 'г.Москва, Мичуринский пр-т, д.6'
-export const email = 'moscowsc.post@yandex.ru'
+export const phoneNumber = '+7 499 719 81 00';
+export const phoneNumber2 = '+7 926 388 48 81';
+export const address = 'г.Москва, Мичуринский пр-т, д.6';
+export const email = 'moscowsc.post@yandex.ru';
+
+export const phoneTelegram = '+79268158505';
+export const phoneWhatsApp = '+79268158505';
 
 export const links = [
-    {id: 30, label: 'О нас', path: '#about', icon: <InfoTwoToneIcon sx={{color: 'var(--blue)', fontSize: 28}}/>},
+    { id: 30, label: 'О нас', path: '#about', icon: <InfoTwoToneIcon sx={{ color: 'var(--blue)', fontSize: 28 }} /> },
     {
         id: 31,
         label: 'Услуги',
         path: '#services',
-        icon: <HealthAndSafetyTwoToneIcon sx={{color: 'var(--blue)', fontSize: 28}}/>
+        icon: <HealthAndSafetyTwoToneIcon sx={{ color: 'var(--blue)', fontSize: 28 }} />
     },
     {
         id: 32,
         label: 'Преимущества',
         path: '#advantages',
-        icon: <Diversity1TwoToneIcon sx={{color: 'var(--blue)', fontSize: 28}}/>
+        icon: <Diversity1TwoToneIcon sx={{ color: 'var(--blue)', fontSize: 28 }} />
     },
-    {id: 33, label: 'Вопросы', path: '#faq', icon: <HelpTwoToneIcon sx={{color: 'var(--blue)', fontSize: 28}}/>},
+    { id: 33, label: 'Вопросы', path: '#faq', icon: <HelpTwoToneIcon sx={{ color: 'var(--blue)', fontSize: 28 }} /> },
     {
         id: 34,
         label: 'Контакты',
         path: '#contacts',
-        icon: <ContactPhoneTwoToneIcon sx={{color: 'var(--blue)', fontSize: 28}}/>
+        icon: <ContactPhoneTwoToneIcon sx={{ color: 'var(--blue)', fontSize: 28 }} />
     },
-]
+];
 
 /*export const services = [
     {id: 1, question: 'Медицинские консультации и диагностика', answer: 'Наш центр предоставляет высококвалифицированные медицинские консультации для пожилых пациентов с использованием современного оборудования для точной диагностики заболеваний'},
@@ -76,7 +80,7 @@ export const services = [
         question: 'Скорая помощь',
         answer: 'МСК - незамедлительный помощник при инсульте, его подозрении или угрозе жизни пациента.\nМы обеспечиваем неотложную медицинскую поддержку 24/7 без перерывов на праздники и выходные: наша команда Ensure Care всегда в готовности.\nНаш автопарк реанимобилей оснащен всем необходимым для кризисных ситуаций - от дефибрилляторов до ИВЛ (искусственная вентиляция легких) и электрокардиографов.\nБригады МСК поддерживают постоянную связь с диспетчерскими службами посредством радио- и мобильной связи.'
     },
-]
+];
 
 export const advantages = [
     {
@@ -144,7 +148,7 @@ export const advantages = [
         question: 'Снижение риска инвалидизации',
         answer: 'Правильное и своевременное лечение помогает снизить риск инвалидизации и сохранить физическую и когнитивную функции'
     },
-]
+];
 
 export const faq = [
     {
@@ -197,9 +201,14 @@ export const faq = [
         question: 'В течение какого времени за женой приедет машина? Мы живем за МКАДом',
         answer: 'Назовите удобное для Вас время, и мы организуем транспортировку из любого региона в любую московскую клинику'
     },
-]
+];
 
-export const text1 = <>При возникновении потребности в госпитализации в Москве, Московской области или любого региона России, предпочтительным выбором станет сотрудничество с <span style={{color: 'var(--blue)', fontWeight: 500}}>Медицинской Сервисной Компанией</span>. Мы гарантируем конкурентоспособные цены, квалифицированный персонал оперативно обеспечит оформление в подходящий медицинский стационар. Тем временем, осуществляя транспортировку вне зависимости от характера недуга или полученных повреждений (от плановых до экстренных случаев), используются специально оснащённые автомобили. Во время переезда обеспечивается поддержание здоровья в стабильном состоянии с оказанием соответствующей медицинской помощи.</>
-export const text2 = 'Встречайте VIP-центр заботы о зрелом возрасте, где каждый получает индивидуальный, всесторонний подход на базе глубокого опыта и искренней приверженности каждому клиенту. Наша цель – вдохнуть здоровье и активность, наполнить дни безмятежностью и избавить от тягостных недугов. Пусть ваш путь к полноценной, счастливой жизни начинается здесь под чутким руководством наших экспертов!'
-export const text3 = 'Главная миссия комплексного ухода за пожилыми гражданами заключается в кардинальном улучшении состояния здоровья, возвращении утраченной подвижности и преобразовании условий жизни до уровня современного комфорта.'
-export const text4 = 'Цель терапии заключается в обеспечении устойчивого эффекта для продолжительного сохранения здоровья и энергичной жизни пациентов.'
+export const text1 = <>При возникновении потребности в госпитализации в Москве, Московской области или любого региона
+    России, предпочтительным выбором станет сотрудничество с <span style={{ color: 'var(--blue)', fontWeight: 500 }}>Медицинской Сервисной Компанией</span>.
+    Мы гарантируем конкурентоспособные цены, квалифицированный персонал оперативно обеспечит оформление в подходящий
+    медицинский стационар. Тем временем, осуществляя транспортировку вне зависимости от характера недуга или полученных
+    повреждений (от плановых до экстренных случаев), используются специально оснащённые автомобили. Во время переезда
+    обеспечивается поддержание здоровья в стабильном состоянии с оказанием соответствующей медицинской помощи.</>;
+export const text2 = 'Встречайте VIP-центр заботы о зрелом возрасте, где каждый получает индивидуальный, всесторонний подход на базе глубокого опыта и искренней приверженности каждому клиенту. Наша цель – вдохнуть здоровье и активность, наполнить дни безмятежностью и избавить от тягостных недугов. Пусть ваш путь к полноценной, счастливой жизни начинается здесь под чутким руководством наших экспертов!';
+export const text3 = 'Главная миссия комплексного ухода за пожилыми гражданами заключается в кардинальном улучшении состояния здоровья, возвращении утраченной подвижности и преобразовании условий жизни до уровня современного комфорта.';
+export const text4 = 'Цель терапии заключается в обеспечении устойчивого эффекта для продолжительного сохранения здоровья и энергичной жизни пациентов.';
