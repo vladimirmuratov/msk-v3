@@ -4,6 +4,12 @@ import HelpTwoToneIcon from '@mui/icons-material/HelpTwoTone';
 import Diversity1TwoToneIcon from '@mui/icons-material/Diversity1TwoTone';
 import ContactPhoneTwoToneIcon from '@mui/icons-material/ContactPhoneTwoTone';
 
+import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
+import MedicalServicesOutlinedIcon from '@mui/icons-material/MedicalServicesOutlined';
+import Diversity2OutlinedIcon from '@mui/icons-material/Diversity2Outlined';
+import LiveHelpOutlinedIcon from '@mui/icons-material/LiveHelpOutlined';
+import SupportAgentOutlinedIcon from '@mui/icons-material/SupportAgentOutlined';
+
 export const phoneNumber = '+7 499 719 81 00';
 export const phoneNumber2 = '+7 926 388 48 81';
 export const address = 'г.Москва, Мичуринский пр-т, д.6';
@@ -13,25 +19,25 @@ export const phoneTelegram = '+79268158505';
 export const phoneWhatsApp = '+79268158505';
 
 export const links = [
-    { id: 30, label: 'О нас', path: '#about', icon: <InfoTwoToneIcon sx={{ color: 'var(--blue)', fontSize: 28 }} /> },
+    { id: 30, label: 'О нас', path: '#about', icon: <InfoOutlinedIcon sx={{ color: 'var(--blue)', fontSize: 28 }} /> },
     {
         id: 31,
         label: 'Услуги',
         path: '#services',
-        icon: <HealthAndSafetyTwoToneIcon sx={{ color: 'var(--blue)', fontSize: 28 }} />
+        icon: <MedicalServicesOutlinedIcon sx={{ color: 'var(--blue)', fontSize: 28 }} />
     },
     {
         id: 32,
         label: 'Преимущества',
         path: '#advantages',
-        icon: <Diversity1TwoToneIcon sx={{ color: 'var(--blue)', fontSize: 28 }} />
+        icon: <Diversity2OutlinedIcon sx={{ color: 'var(--blue)', fontSize: 28 }} />
     },
-    { id: 33, label: 'Вопросы', path: '#faq', icon: <HelpTwoToneIcon sx={{ color: 'var(--blue)', fontSize: 28 }} /> },
+    { id: 33, label: 'Вопросы', path: '#faq', icon: <LiveHelpOutlinedIcon sx={{ color: 'var(--blue)', fontSize: 28 }} /> },
     {
         id: 34,
         label: 'Контакты',
         path: '#contacts',
-        icon: <ContactPhoneTwoToneIcon sx={{ color: 'var(--blue)', fontSize: 28 }} />
+        icon: <SupportAgentOutlinedIcon sx={{ color: 'var(--blue)', fontSize: 28 }} />
     },
 ];
 

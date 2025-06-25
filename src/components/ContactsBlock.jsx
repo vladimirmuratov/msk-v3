@@ -47,9 +47,11 @@ export const ContactsBlock = () => {
                         <Typography sx={{ fontSize: { xs: '14px', sm: '16px' } }}>ИНН: 9725116009</Typography>
                         <Typography sx={{ fontSize: { xs: '14px', sm: '16px' } }}>КПП: 772501001</Typography>
                         <Typography sx={{ fontSize: { xs: '14px', sm: '16px' } }}>ОГРН: 1237700147343</Typography>
+                        <Box sx={{ marginTop: '10px' }}>
+                            <SocialBlock className="banner-social-mobile" />
+                        </Box>
                     </Box>
 
-                    <SocialBlock className="banner-social-mobile" />
 
                 </Box>
                 <Box>

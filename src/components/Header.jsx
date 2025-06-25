@@ -52,7 +52,7 @@ export const Header = ({ toggleDrawer }) => {
                 <Link href="/">
                     <img className="logo" src="/images/logo.png" alt="logo" />
                 </Link>
-                <Box component="nav" sx={{ display: { xs: 'none', md: 'flex' }, gap: '20px', margin: '0 auto' }}>
+                <Box component="nav" sx={{ display: { xs: 'none', md: 'flex' }, gap: '25px', margin: '0 auto' }}>
                     {links.map((link) => <BaseLink key={link.id} {...link} />)}
                 </Box>
 
