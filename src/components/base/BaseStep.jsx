@@ -1,6 +1,7 @@
-import {Box, Divider, Typography} from '@mui/material'
+import React from 'react';
+import { Box, Divider, Typography } from '@mui/material';
 
-export const BaseStep = ({id = '', number, label, className = ''}) => {
+export const BaseStep = React.memo(({ id = '', number, label, className = '' }) => {
     return (
         <Box
             data-aos="zoom-out"
@@ -12,7 +13,7 @@ export const BaseStep = ({id = '', number, label, className = ''}) => {
                 display: 'flex',
                 flexDirection: 'column',
                 alignItems: 'center',
-                paddingY: {xs: '25px', sm: '50px'}
+                paddingY: { xs: '25px', sm: '50px' },
             }}
         >
             <Divider
@@ -25,8 +26,19 @@ export const BaseStep = ({id = '', number, label, className = ''}) => {
                     alignSelf: 'center',
                 }}
             />
-            <Typography sx={{color: 'var(--blue)', fontSize: '24px'}}>{number}</Typography>
-            <Typography variant='h2' sx={{textTransform: 'uppercase', fontSize: {xs: '36px', md: '40px'}, fontWeight: 400, color: 'var(--blue)'}}>{label}</Typography>
+            <Typography sx={{ color: 'var(--blue)', fontSize: '24px' }}>{number}</Typography>
+            <Typography
+                variant="h2"
+                sx={{
+                    textTransform: 'uppercase',
+                    fontSize: { xs: '36px', md: '40px' },
+                    fontWeight: 400,
+                    color: 'var(--blue)',
+                    textAlign: 'center',
+                    textWrap: 'balance',
+                }}
+            >
+                {label}</Typography>
         </Box>
-    )
-}
+    );
+});

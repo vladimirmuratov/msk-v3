@@ -1,8 +1,8 @@
-import InfoTwoToneIcon from '@mui/icons-material/InfoTwoTone';
-import HealthAndSafetyTwoToneIcon from '@mui/icons-material/HealthAndSafetyTwoTone';
-import HelpTwoToneIcon from '@mui/icons-material/HelpTwoTone';
-import Diversity1TwoToneIcon from '@mui/icons-material/Diversity1TwoTone';
-import ContactPhoneTwoToneIcon from '@mui/icons-material/ContactPhoneTwoTone';
+// import InfoTwoToneIcon from '@mui/icons-material/InfoTwoTone';
+// import HealthAndSafetyTwoToneIcon from '@mui/icons-material/HealthAndSafetyTwoTone';
+// import HelpTwoToneIcon from '@mui/icons-material/HelpTwoTone';
+// import Diversity1TwoToneIcon from '@mui/icons-material/Diversity1TwoTone';
+// import ContactPhoneTwoToneIcon from '@mui/icons-material/ContactPhoneTwoTone';
 
 import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
 import MedicalServicesOutlinedIcon from '@mui/icons-material/MedicalServicesOutlined';
@@ -10,8 +10,8 @@ import Diversity2OutlinedIcon from '@mui/icons-material/Diversity2Outlined';
 import LiveHelpOutlinedIcon from '@mui/icons-material/LiveHelpOutlined';
 import SupportAgentOutlinedIcon from '@mui/icons-material/SupportAgentOutlined';
 
-export const phoneNumber = '+7 499 719 81 00';
-export const phoneNumber2 = '+7 926 388 48 81';
+export const phoneNumber = '+7 (499) 719-81-00';
+export const phoneNumber2 = '+7 (926) 388-48-81';
 export const address = 'г.Москва, Мичуринский пр-т, д.6';
 export const email = 'moscowsc.post@yandex.ru';
 
@@ -216,5 +216,5 @@ export const text1 = <>При возникновении потребности 
     повреждений (от плановых до экстренных случаев), используются специально оснащённые автомобили. Во время переезда
     обеспечивается поддержание здоровья в стабильном состоянии с оказанием соответствующей медицинской помощи.</>;
 export const text2 = 'Встречайте VIP-центр заботы о зрелом возрасте, где каждый получает индивидуальный, всесторонний подход на базе глубокого опыта и искренней приверженности каждому клиенту. Наша цель – вдохнуть здоровье и активность, наполнить дни безмятежностью и избавить от тягостных недугов. Пусть ваш путь к полноценной, счастливой жизни начинается здесь под чутким руководством наших экспертов!';
-export const text3 = 'Главная миссия комплексного ухода за пожилыми гражданами заключается в кардинальном улучшении состояния здоровья, возвращении утраченной подвижности и преобразовании условий жизни до уровня современного комфорта.';
+export const text3 = 'Главная миссия комплексного ухода за пожилыми заключается в кардинальном улучшении состояния здоровья, возвращении утраченной подвижности и преобразовании условий жизни до уровня современного комфорта.';
 export const text4 = 'Цель терапии заключается в обеспечении устойчивого эффекта для продолжительного сохранения здоровья и энергичной жизни пациентов.';

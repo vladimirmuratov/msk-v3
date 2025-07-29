@@ -1,3 +1,4 @@
+import React from 'react';
 import { Box, Link, Typography } from '@mui/material';
 import { address, email, phoneNumber, phoneNumber2 } from '@/config';
 import MapOutlinedIcon from '@mui/icons-material/MapOutlined';
@@ -5,7 +6,7 @@ import LocalPhoneOutlinedIcon from '@mui/icons-material/LocalPhoneOutlined';
 import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
 import SocialBlock from '@/components/SocialBlock';
 
-export const ContactsBlock = () => {
+export const ContactsBlock = React.memo(() => {
     return (
         <Box
             component="section"
@@ -63,4 +64,4 @@ export const ContactsBlock = () => {
             </Box>
         </Box>
     );
-};
+});

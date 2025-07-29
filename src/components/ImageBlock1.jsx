@@ -1,8 +1,12 @@
+import React from 'react';
 import { Box, Typography } from '@mui/material';
 
-export const ImageBlock1 = ({ img, text }) => {
+export const ImageBlock1 = React.memo(({ img, text }) => {
     return (
         <Box
+            data-aos="zoom-out"
+            data-aos-duration="1200"
+            data-aos-anchor-placement="center-bottom"
             sx={{
                 display: 'flex',
                 flexDirection: { xs: 'column', md: 'row' },
@@ -30,4 +34,4 @@ export const ImageBlock1 = ({ img, text }) => {
             </Box>
         </Box>
     );
-};
+});
