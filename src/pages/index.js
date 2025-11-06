@@ -54,7 +54,7 @@ export default function Home() {
             <Box component="main">
                 <Banner />
                 <BaseStep id="about" number={'01'}
-                          label="Платная госпитализация в Москве и регионах быстро, официально, без полиса ОМС" />
+                          label="Платная госпитализация в Москве быстро, официально, без полиса ОМС" />
                 <AboutBlock />
                 <BaseCallBlock text='Мы заботимся о том, чтобы ваше лечение началось вовремя, с комфортом, безопасностью и полным доверием.'/>
                 <ImageBlock1 text={text2} img="/images/doctor-1.jpg" />
