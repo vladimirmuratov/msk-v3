@@ -1,7 +1,6 @@
 import React from 'react';
 import { Box, Link, Typography } from '@mui/material';
-import { address, email, phoneNumber, phoneNumber2 } from '@/config';
-import MapOutlinedIcon from '@mui/icons-material/MapOutlined';
+import { email, phoneNumber, phoneNumber2 } from '@/config';
 import LocalPhoneOutlinedIcon from '@mui/icons-material/LocalPhoneOutlined';
 import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
 import SocialBlock from '@/components/SocialBlock';
@@ -22,10 +21,12 @@ export const ContactsBlock = React.memo(() => {
 
             <Box sx={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
                 <Box sx={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
-                    <Box sx={{ display: 'flex', gap: '10px' }}>
+
+                    {/*<Box sx={{ display: 'flex', gap: '10px' }}>
                         <MapOutlinedIcon sx={{ color: 'var(--blue)' }} />
                         <Typography sx={{ fontSize: { xs: '14px', sm: '16px' } }}>{address}</Typography>
-                    </Box>
+                    </Box>*/}
+
                     <Box sx={{ display: 'flex', gap: '10px' }}>
                         <LocalPhoneOutlinedIcon sx={{ color: 'var(--blue)' }} />
                         <Box>
@@ -55,7 +56,7 @@ export const ContactsBlock = React.memo(() => {
 
 
                 </Box>
-                <Box>
+                <Box sx={{display: 'none'}}>
                     <iframe
                         className="map"
                         src="https://yandex.ru/map-widget/v1/?um=constructor%3A604ee8345ca097d664aa1c7764529b62cb0469a88360ead0ce5d5df219788165&amp;source=constructor"

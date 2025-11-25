@@ -1,5 +1,5 @@
 import { Box, Typography } from '@mui/material';
-import { address, phoneNumber } from '@/config';
+import { phoneNumber } from '@/config';
 import Link from 'next/link';
 import SocialBlock from '@/components/SocialBlock';
 
@@ -16,14 +16,15 @@ export const ContactBanner = () => {
             paddingY: '12px'
         }}>
 
-            <Typography sx={{ fontSize: '14px' }}>{address}</Typography>
+            {/*<Typography sx={{ fontSize: '14px' }}>{address}</Typography>*/}
+            <Typography sx={{ fontSize: '16px' }}>Круглосуточно 24/7</Typography>
 
-            <Box sx={{display: 'flex', alignItems: 'center', gap: '15px'}}>
+            <Box sx={{ display: 'flex', alignItems: 'center', gap: '15px' }}>
                 <Typography sx={{ fontSize: '16px' }}>
                     <Link href="tel:84997198100">{phoneNumber}</Link>
                 </Typography>
 
-                <SocialBlock/>
+                <SocialBlock />
 
             </Box>
         </Box>
