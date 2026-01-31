@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://msk-group-hospital.online/sitemap.xml
+Sitemap: https://msk-medical.vercel.app/sitemap.xml

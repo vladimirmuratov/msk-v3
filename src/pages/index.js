@@ -33,9 +33,7 @@ export default function Home() {
                 <meta name="keywords"
                       content="платная госпитализация, госпитализация в Москву, лечение в Москве, лучшие клиники Москвы, платное лечение в Москве, организация госпитализации, медицинская эвакуация, транспортировка больных, реабилитация в Москве, ведущие врачи Москвы, запись в клинику, обследование в Москве, скорая медицинская помощь, частная госпитализация, медицинский туризм Россия" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <meta name="yandex-verification" content="478e8b2a8af6979b" />
                 <meta name="robots" content="index, follow" />
-                {/*<link rel="canonical" href="https://msk-group-hospital.online/" />*/}
                 <link rel="icon" href="/favicon.png" />
                 <meta property="og:locale" content="ru_RU" />
                 <meta property="og:title"
@@ -43,13 +41,16 @@ export default function Home() {
                 <meta property="og:description"
                       content="Нужна срочная госпитализация в ведущую клинику Москвы? Мы организуем размещение в течение 24 часов, без очередей и бумажной волокиты. Только проверенные врачи и топовые учреждения Москвы — федеральные и ведомственные клиники, включая НМИЦ, ЦКБ, Боткина, и другие. Персональный куратор 24/7: подбор клиники, трансфер, помощь с документами. Доступ к комфортным палатам и VIP-условиям лечения. Позвоните сейчас — получите бесплатную консультацию и план госпитализации за 15 минут." />
                 <meta property="og:type" content="website" />
-                <meta property="og:url" content="https://msk-group-hospital.online/" />
-                <meta property="og:image" content="https://msk-group-hospital.online/images/banner.webp" />
+                <meta property="og:url" content="https://msk-medical.vercel.app/" />
+                <meta property="og:image" content="https://msk-medical.vercel.app/images/banner.webp" />
                 <meta property="og:image:alt"
                       content="Медицинская Сервисная Компания. Платная госпитализация в Москву. Медицинский туризм. Организация лечения в ведущих клиниках. +7 (499) 719-81-00, 24/7" />
                 <meta property="og:image:type" content="image/webp" />
                 <meta property="og:site_name"
                       content="Медицинская Сервисная Компания. Платная госпитализация в Москву. Медицинский туризм. Организация лечения в ведущих клиниках. +7 (499) 719-81-00, 24/7" />
+
+                <meta name="yandex-verification" content="600828288751d95d" />
+                <link rel="canonical" href="https://msk-medical.vercel.app/" />
             </Head>
             <Box component="main">
                 <Banner />
