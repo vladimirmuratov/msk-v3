@@ -12,15 +12,21 @@ import SupportAgentOutlinedIcon from '@mui/icons-material/SupportAgentOutlined';
 import { createID } from '@/lib/createID';
 
 export const phoneNumber = '+7 (499) 719-81-00';
-export const phoneNumber2 = '+7 (926) 388-48-81';
+export const phoneNumber2 = '+7 (925) 179-97-86';
 export const address = 'г.Москва, Мичуринский пр-т, д.6';
 export const email = 'moscowsc.post@yandex.ru';
 
-export const phoneTelegram = '+79268158505';
+export const telegramLink = 'https://t.me/MedScompany';
 export const phoneWhatsApp = '+79268158505';
+export const maxLink = 'https://max.ru/u/f9LHodD0cOL8G6-pNFCQ3E-059tyhBQYxknGhq_fIsr3Lge7_i0lYCzTk-Q';
 
 export const links = [
-    { id: createID(), label: 'О нас', path: '#about', icon: <InfoOutlinedIcon sx={{ color: 'var(--blue)', fontSize: 28 }} /> },
+    {
+        id: createID(),
+        label: 'О нас',
+        path: '#about',
+        icon: <InfoOutlinedIcon sx={{ color: 'var(--blue)', fontSize: 28 }} />
+    },
     {
         id: createID(),
         label: 'Услуги',
@@ -33,7 +39,12 @@ export const links = [
         path: '#advantages',
         icon: <Diversity2OutlinedIcon sx={{ color: 'var(--blue)', fontSize: 28 }} />
     },
-    { id: createID(), label: 'Вопросы', path: '#faq', icon: <LiveHelpOutlinedIcon sx={{ color: 'var(--blue)', fontSize: 28 }} /> },
+    {
+        id: createID(),
+        label: 'Вопросы',
+        path: '#faq',
+        icon: <LiveHelpOutlinedIcon sx={{ color: 'var(--blue)', fontSize: 28 }} />
+    },
     {
         id: createID(),
         label: 'Контакты',
